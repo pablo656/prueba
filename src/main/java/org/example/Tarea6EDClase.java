@@ -1,5 +1,4 @@
 package org.example;
-
 /**
  * Clase que hace descuentos a productos.
  * @version 1.0
