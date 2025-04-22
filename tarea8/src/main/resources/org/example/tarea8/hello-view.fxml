@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tarea8.HelloController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="296.0" style="-fx-background-color: pink;">
+         <children>
+            <Pane prefHeight="244.0" prefWidth="296.0" style="-fx-background-color: pink;">
+               <children>
+                  <Label layoutX="32.0" layoutY="79.0" text="Codigo">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="116.0" text="Nombre">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="156.0" text="Cantidad">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="196.0" text="Descripción">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Codigo" layoutX="119.0" layoutY="76.0" />
+                  <TextField fx:id="Nombre" layoutX="119.0" layoutY="114.0" />
+                  <TextField fx:id="Cantidad" layoutX="119.0" layoutY="154.0" />
+                  <TextField fx:id="Descripcion" layoutX="119.0" layoutY="194.0" />
+               </children></Pane>
+            <Pane layoutY="244.0" prefHeight="100.0" prefWidth="296.0" style="-fx-background-color: pink;">
+               <children>
+                  <Button fx:id="Insertar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="77.0" text="insertar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="buscar" layoutX="110.0" layoutY="14.0" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="77.0" text="Buscar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Modificar" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="77.0" text="Modificar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Borrar" layoutX="110.0" layoutY="50.0" mnemonicParsing="false" onAction="#borrar" prefHeight="25.0" prefWidth="77.0" text="Borrar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children></Pane>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
+         <children>
+            <Pane prefHeight="349.0" prefWidth="296.0" style="-fx-background-color: pink;">
+               <children>
+                  <Label layoutX="22.0" layoutY="32.0" prefHeight="20.0" prefWidth="149.0" text="Listado de productos">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <TextArea fx:id="area" layoutX="22.0" layoutY="63.0" prefHeight="154.0" prefWidth="246.0" />
+                  <Button fx:id="Mostrar" layoutX="22.0" layoutY="250.0" mnemonicParsing="false" onAction="#mostrar" prefHeight="25.0" prefWidth="77.0" text="Mostrar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Salir" layoutX="122.0" layoutY="250.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="77.0" text="Salir">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
